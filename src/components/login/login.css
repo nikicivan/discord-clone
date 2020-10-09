@@ -1,0 +1,36 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login > button {
+    width: 30rem;
+    background-color: #738abd;
+    color: #eff2f5;
+    font-weight: 800;
+}
+
+.login > button:hover {
+    background-color: black;
+    color: #738abd;
+}
+
+.login > div > img {
+    object-fit: contain;
+    height: 13rem;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .login {
+        overflow-x: hidden;
+    }
+    .login > div > img {
+        object-fit: contain;
+        height: 8rem;
+    }
+    .login > button {
+        width: 15rem;
+    }
+}
